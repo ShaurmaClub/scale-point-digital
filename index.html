@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scale Point Digital — Performance Marketing Agency</title>
+  <meta name="description" content="Scale Point Digital — digital-агентство в сфере performance-маркетинга, интернет-рекламы и аналитики.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow effects -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#" class="logo" aria-label="Scale Point Digital главная">
+        <span class="logo-name">Scale Point Digital</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+
+      <nav class="nav" id="mainNav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">О нас</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Услуги</a></li>
+          <li class="nav-item"><a href="#approach" class="nav-link">Подход</a></li>
+        </ul>
+        <a href="#about" class="btn btn-sm btn-header">Подробнее</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            <span>Performance &amp; Analytics</span>
+          </div>
+          <h1 class="hero-title">
+            Performance-маркетинг, который помогает бизнесу расти
+          </h1>
+          <p class="hero-subtitle">
+            Scale Point Digital — digital-агентство с фокусом на performance-маркетинг, рекламные кампании и аналитику.
+          </p>
+          <div class="hero-actions">
+            <a href="#about" class="btn btn-primary">Узнать больше</a>
+            <a href="#services" class="btn btn-outline">Наши услуги</a>
+          </div>
+        </div>
+
+        <!-- Decorative Abstract Dashboard Widget -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="dashboard-preview">
+            <div class="dashboard-header">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="dashboard-caption">Analytics Monitor</span>
+            </div>
+
+            <div class="dashboard-body">
+              <div class="chart-panel">
+                <div class="chart-info">
+                  <div class="chart-metric-label">Эффективность каналов</div>
+                  <div class="chart-metric-val">
+                    +42.8% <span class="chart-trend">▲</span>
+                  </div>
+                </div>
+
+                <!-- Abstract Vector Graph -->
+                <svg class="growth-chart" viewBox="0 0 400 160" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#25e6eb" stop-opacity="0.32" />
+                      <stop offset="70%" stop-color="#25e6eb" stop-opacity="0.05" />
+                      <stop offset="100%" stop-color="#25e6eb" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="lineGradient" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#25e6eb" />
+                      <stop offset="65%" stop-color="#25e6eb" />
+                      <stop offset="100%" stop-color="#ff8a22" />
+                    </linearGradient>
+                    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                      <feGaussianBlur stdDeviation="3" result="blur" />
+                      <feMerge>
+                        <feMergeNode in="blur" />
+                        <feMergeNode in="SourceGraphic" />
+                      </feMerge>
+                    </filter>
+                  </defs>
+
+                  <!-- Grid lines -->
+                  <line x1="0" y1="40" x2="400" y2="40" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4 4" />
+                  <line x1="0" y1="80" x2="400" y2="80" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4 4" />
+                  <line x1="0" y1="120" x2="400" y2="120" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4 4" />
+
+                  <!-- Shaded Area -->
+                  <path d="M 0 145 C 50 135, 80 120, 130 110 C 180 100, 220 70, 270 60 C 320 50, 360 25, 400 20 L 400 160 L 0 160 Z" fill="url(#areaGradient)" />
+
+                  <!-- Growth Trend Curve -->
+                  <path d="M 0 145 C 50 135, 80 120, 130 110 C 180 100, 220 70, 270 60 C 320 50, 360 25, 400 20" fill="none" stroke="url(#lineGradient)" stroke-width="3.5" filter="url(#glow)" />
+
+                  <!-- Key Data Points -->
+                  <circle cx="130" cy="110" r="4" fill="#111a22" stroke="#25e6eb" stroke-width="2.5" />
+                  <circle cx="270" cy="60" r="4" fill="#111a22" stroke="#25e6eb" stroke-width="2.5" />
+                  <circle cx="400" cy="20" r="5" fill="#ff8a22" stroke="#ffffff" stroke-width="2" />
+                </svg>
+              </div>
+
+              <!-- Mini Metric Cards -->
+              <div class="metrics-row">
+                <div class="metric-card">
+                  <div class="metric-title">Performance Focus</div>
+                  <div class="metric-value">Конверсии</div>
+                  <div class="metric-bar">
+                    <div class="metric-fill fill-cyan" style="width: 82%;"></div>
+                  </div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-title">Smart Targeting</div>
+                  <div class="metric-value">Оптимизация</div>
+                  <div class="metric-bar">
+                    <div class="metric-fill fill-orange" style="width: 90%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about-card reveal">
+          <div class="section-tag">О нас</div>
+          <h2 class="section-title about-title">Digital. Performance. Analytics.</h2>
+          <p class="about-text">
+            Мы объединяем рекламу, аналитику и работу с digital-каналами в единую систему. Основной фокус — понятные рекламные решения и измеримый подход к продвижению.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">Направления</div>
+          <h2 class="section-title">Услуги</h2>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card reveal">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="service-title">Performance Marketing</h3>
+            <p class="service-desc">
+              Планирование и оптимизация рекламных кампаний.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="service-card reveal">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <path d="M11 8v6"></path>
+                <path d="M8 11h6"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Контекстная реклама</h3>
+            <p class="service-desc">
+              Работа с поисковым и рекламным трафиком.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="service-card reveal">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+                <path d="M3 20h18"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Аналитика</h3>
+            <p class="service-desc">
+              Оценка эффективности рекламных каналов и пользовательского пути.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="section approach" id="approach">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">Процесс</div>
+          <h2 class="section-title">Наш подход</h2>
+        </div>
+
+        <div class="approach-sequence">
+          <!-- Step 1 -->
+          <div class="approach-step reveal">
+            <div class="step-badge">
+              <span class="step-num">01</span>
+              <span class="step-separator">—</span>
+              <span class="step-name">Анализ</span>
+            </div>
+            <p class="step-desc">Изучаем задачу и рекламные каналы.</p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="approach-step reveal">
+            <div class="step-badge">
+              <span class="step-num">02</span>
+              <span class="step-separator">—</span>
+              <span class="step-name">Запуск</span>
+            </div>
+            <p class="step-desc">Формируем и запускаем рекламную стратегию.</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="approach-step reveal">
+            <div class="step-badge">
+              <span class="step-num">03</span>
+              <span class="step-separator">—</span>
+              <span class="step-name">Оптимизация</span>
+            </div>
+            <p class="step-desc">Анализируем результаты и корректируем продвижение.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Section -->
+    <section class="section final" id="final">
+      <div class="container">
+        <div class="final-card reveal">
+          <h2 class="final-brand">Scale Point Digital</h2>
+          <p class="final-subtitle">Performance marketing &amp; digital advertising</p>
+          <div class="final-divider" aria-hidden="true"></div>
+          <p class="final-notice">
+            Сайт находится на этапе развития и постепенно дополняется новыми материалами.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">Scale Point Digital</span>
+        <span class="footer-copy">&copy; 2026</span>
+      </div>
+      <div class="footer-right">
+        <span class="footer-tagline">Digital Performance Agency</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
